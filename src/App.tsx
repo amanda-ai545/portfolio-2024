@@ -1,35 +1,55 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import '@assets/styles/main.css';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+import { NavBar } from '@components/NavBar';
+import { Loader } from '@components/common/Loader';
+import { Wrapper } from '@components/common/Wrapper';
 
 function App() {
-  const [count, setCount] = useState(0)
+  gsap.registerPlugin(ScrollTrigger);
+
+  // useEffect(() => {
+  //   ScrollTrigger.create({
+  //     start: 'top top',
+  //     end: 'bottom center',
+  //     animation: gsap.to(document.querySelector('.navbar'), {
+  //       paddingTop: `0.75rem`,
+  //       paddingBottom: `0.75rem`,
+  //       backgroundColor: `#111827`,
+  //       color: `#fff`,
+  //       immediateRender: false,
+  //     }),
+  //     toggleActions: 'restart none none reverse',
+  //   });
+
+  //   ScrollTrigger.create({
+  //     start: 'top top',
+  //     end: 'bottom center',
+  //     animation: gsap.to(document.querySelector('.navbar__content-logo-main'), {
+  //       fill: `#e2e8f0`, // #FFCF34
+  //       immediateRender: false,
+  //     }),
+  //     toggleActions: 'restart none none reverse',
+  //   });
+
+  //   ScrollTrigger.create({
+  //     start: 'bottom bottom',
+  //     end: 'top center',
+  //     animation: gsap.to(document.querySelector('.side__nav'), {
+  //       bottom: `56px`,
+  //       immediateRender: false,
+  //     }),
+  //     toggleActions: 'restart none none reverse',
+  //   });
+  // }, []);
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <Wrapper className="relative select-none">
+      <Loader />
+      <NavBar />
+    </Wrapper>
+  );
 }
 
-export default App
+export default App;
