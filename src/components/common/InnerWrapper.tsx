@@ -19,6 +19,9 @@ export const InnerWrapper: FC<Props> = ({ id, className = ``, children }) => {
         px-20
         font-jost
 
+        tablet:px-6
+        phone:px-4
+
         ${className}
       `}
     >
