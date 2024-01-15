@@ -152,7 +152,7 @@ export const NavBar: FC<Props> = ({ className = `` }) => {
             `}
           >
             <InnerWrapper className="flex justify-center items-center text-center">
-              <ul className="navbar__content-links grid gap-10 text-lg">
+              <ul className="navbar-mobile__content-links grid gap-10 text-lg">
                 <li>
                   <HashLink to="#home" smooth onClick={handleMobileNav}>
                     Home
