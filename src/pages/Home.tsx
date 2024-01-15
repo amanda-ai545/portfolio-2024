@@ -2,9 +2,9 @@ import { FC } from 'react';
 
 import profile from '@assets/images/profile.png';
 
-import { BlobOne } from '@/components/common/BlobOne';
-import { BlobThree } from '@/components/common/BlobThree';
-import { BlobTwo } from '@/components/common/BlobTwo';
+import { BlobOne } from '@components/common/BlobOne';
+import { BlobThree } from '@components/common/BlobThree';
+import { BlobTwo } from '@components/common/BlobTwo';
 import { Button } from '@components/common/Button';
 import { IconLightning } from '@components/common/IconLightning';
 import { IconPaper } from '@components/common/IconPaper';
