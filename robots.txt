@@ -1,0 +1,10 @@
+# Allow all web crawlers
+User-agent: *
+
+# Allow access to the entire website
+Allow: /
+
+
+# Disallow crawling of specific directories
+Disallow: /private/
+Disallow: /restricted-page.html
