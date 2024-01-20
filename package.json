@@ -9,7 +9,8 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "pnpm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "generate-sitemap": "node scripts/generateSitemap.js"
   },
   "dependencies": {
     "@gsap/react": "^2.0.2",
@@ -21,12 +22,14 @@
     "react-dom": "^18.2.0",
     "react-player": "^2.14.1",
     "react-router-dom": "^6.21.1",
-    "react-router-hash-link": "^2.4.3"
+    "react-router-hash-link": "^2.4.3",
+    "sitemap-generator": "^8.5.1"
   },
   "devDependencies": {
     "@types/node": "^20.10.8",
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
+    "@types/sitemap-generator": "^8.5.5",
     "@typescript-eslint/eslint-plugin": "^6.14.0",
     "@typescript-eslint/parser": "^6.14.0",
     "@vitejs/plugin-react": "^4.2.1",
