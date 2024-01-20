@@ -38,7 +38,7 @@ export const AboutMe: FC<Props> = ({ className = `` }) => {
       </InnerWrapper>
 
       <WaveOne className="absolute bottom-0 w-full z-10" color="#fff" />
-      <WaveTwo className="absolute top-0 w-full z-10" color="#e5e7eb" />
+      <WaveTwo className="absolute top-0 w-full z-10 tablet:-top-[1px] phone:-top-[1px]" color="#e5e7eb" />
     </Wrapper>
   );
 };

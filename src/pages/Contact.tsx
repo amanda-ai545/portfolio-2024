@@ -24,6 +24,8 @@ export const Contact: FC<Props> = ({ className = `` }) => {
         bg-gray-300
         scroll-mt-[3.8rem]
 
+        phone:min-h-[80vh]
+
         ${className}
       `}
     >
@@ -46,7 +48,7 @@ export const Contact: FC<Props> = ({ className = `` }) => {
         </div>
       </InnerWrapper>
 
-      <WaveTwo className="absolute top-0 w-full z-10" color="#fff" />
+      <WaveTwo className="absolute top-0 w-full z-10 tablet:-top-[1px] phone:-top-[1px]" color="#fff" />
     </Wrapper>
   );
 };

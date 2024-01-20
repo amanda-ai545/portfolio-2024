@@ -87,7 +87,7 @@ export const Home: FC<Props> = ({ className = `` }) => {
 
       <BlobOne className="absolute top-10 w-[30%] h-auto phone:top-16" color="#cbd5e1" />
       <BlobTwo className="absolute bottom-10 left-[50vw] w-[25vw] h-auto" color="#cbd5e1" />
-      <BlobThree className="absolute top-12 right-0 w-[25vw] h-auto rotate-[-80deg]" color="#94a3b8" />
+      <BlobThree className="absolute top-12 right-0 w-[25vw] h-auto -rotate-[80deg]" color="#94a3b8" />
     </Wrapper>
   );
 };

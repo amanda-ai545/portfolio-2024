@@ -51,7 +51,7 @@ export const details = [
         />
 
         <Card
-          logo={<LogoAccenture className="w-auto h-20 mt-[-0.5rem]" />}
+          logo={<LogoAccenture className="w-auto h-20 -mt-[0.5rem]" />}
           title="Advanced App Engineering Analyst"
           subTitle="(April 2021 - July 2022)"
           description="I successfully developed a proof-of-concept SFTP Application and played a pivotal role in a separate project where we constructed an Availability Web Application for a heavy equipment company. I have also effectively crafted and executed multiple applications using Vue 3 while closely collaborating with Japanese Frontend Developers and Backend Developers. Additionally, I was tasked with another project that involved gathering, evaluating, and analyzing data, and subsequently, I crafted comprehensive reports and dashboards using Power BI and Power Automate."

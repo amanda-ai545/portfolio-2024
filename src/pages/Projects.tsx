@@ -48,11 +48,13 @@ export const Projects: FC<Props> = ({ className = `` }) => {
 
         relative
         min-h-screen
-        mt-[-1rem]
+        -mt-[1rem]
         bg-white
         scroll-mt-[3.8rem]
 
-        phone:mt-0
+        tablet:-mt-[1px]
+        phone:-mt-[1px]
+
         ${className}
       `}
     >

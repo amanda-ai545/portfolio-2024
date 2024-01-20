@@ -148,7 +148,7 @@ export const NavBar: FC<Props> = ({ className = `` }) => {
               duration-1000
               ease-in-out
 
-              ${isNavOpen ? 'translate-y-0' : 'translate-y-full'}
+              ${isNavOpen ? 'translate-y-0' : 'translate-y-[110%]'}
             `}
           >
             <InnerWrapper className="flex justify-center items-center text-center">
