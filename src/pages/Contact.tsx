@@ -1,9 +1,9 @@
 import { FC } from 'react';
 
-import { Link } from '@/components/common/Link';
 import { IconEmail } from '@components/common/IconEmail';
 import { IconPhone } from '@components/common/IconPhone';
 import { InnerWrapper } from '@components/common/InnerWrapper';
+import { Link } from '@components/common/Link';
 import { Title } from '@components/common/Title';
 import { WaveTwo } from '@components/common/WaveTwo';
 import { Wrapper } from '@components/common/Wrapper';
