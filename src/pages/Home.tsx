@@ -51,18 +51,20 @@ export const Home: FC<Props> = ({ className = `` }) => {
 
         <div className="home__details relative flex flex-wrap justify-between items-center w-auto">
           <div>
-            <h1 className="mb-10 text-[4.3vw] phone:mb-5 phone:text-[10vw]">
+            <p className="mb-10 text-[4.3vw] phone:mb-5 phone:text-[10vw]">
               Hi, I am
-              <span className="block mt-4 text-[4.3vw] font-semibold font-italiana uppercase leading-[110%] phone:text-[10vw] phone:mt-0">
-                Amanda Diane
-              </span>
-              <span className="block mb-1 text-[9vw] font-semibold font-italiana uppercase leading-[110%] phone:text-[20vw]">
-                Evallo
-              </span>
-              <span className="block text-[0.84vw] font-semibold uppercase phone:text-[2.5vw]">
+              <h1>
+                <span className="block mt-4 text-[4.3vw] font-semibold font-italiana uppercase leading-[110%] phone:text-[10vw] phone:mt-0">
+                  Amanda Diane
+                </span>
+                <span className="block mb-1 text-[9vw] font-semibold font-italiana uppercase leading-[110%] phone:text-[20vw]">
+                  Evallo
+                </span>
+              </h1>
+              <h2 className="block text-[0.84vw] font-semibold uppercase phone:text-[2.5vw]">
                 Frontend Web Developer / Vue Developer / React JS Developer
-              </span>
-            </h1>
+              </h2>
+            </p>
 
             <div className="flex w-full">
               <Button
