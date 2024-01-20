@@ -74,7 +74,7 @@ export const details = [
           logo={<LogoTranscosmos className="w-auto h-12 mt-2" />}
           title="Frontend Developer"
           subTitle="(May 2019 - May 2020)"
-          description="My role involved the transformation of wireframes or designs into functional code or websites, ensuring precise alignment with our clients' provided designs down to the pixel. Additionally, I participated in a project where we developed a proprietary Form Component exclusively for Transcosmos developers."
+          description="My role involved the transformation of wireframes or designs into functional code or websites, ensuring precise alignment with our clients provided designs down to the pixel. Additionally, I participated in a project where we developed a proprietary Form Component exclusively for Transcosmos developers."
           chips={['React JS', 'HTML5', 'CSS3', 'JavaScript', 'jQuery', 'Chart JS', 'Responsive Web Design']}
         />
       </div>

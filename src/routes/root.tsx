@@ -1,6 +1,7 @@
 import { NavBar } from '@components/NavBar';
 import { AboutMe } from '@pages/AboutMe';
 import { Home } from '@pages/Home';
+import { Projects } from '@pages/Projects';
 
 export const Root = () => {
   return (
@@ -8,6 +9,7 @@ export const Root = () => {
       <NavBar />
       <Home />
       <AboutMe />
+      <Projects />
     </>
   );
 };
