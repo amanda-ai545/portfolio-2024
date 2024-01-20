@@ -1,4 +1,4 @@
-import { FC, ReactNode, useState } from 'react';
+import { FC, ReactNode, useEffect, useState } from 'react';
 import { HashLink } from 'react-router-hash-link';
 
 import { InnerWrapper } from '@components/common/InnerWrapper';
@@ -11,10 +11,26 @@ type Props = {
 
 export const NavBar: FC<Props> = ({ className = `` }) => {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const [screenSize, setScreenSize] = useState(window.innerWidth);
 
   const handleMobileNav = () => {
     setIsNavOpen(!isNavOpen);
   };
+
+  const screenSizeClass = screenSize >= 769 ? 'pc' : 'sp';
+
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenSize(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
     <div
@@ -32,6 +48,7 @@ export const NavBar: FC<Props> = ({ className = `` }) => {
         uppercase
         z-20
 
+        ${screenSizeClass}
         ${className}
       `}
     >

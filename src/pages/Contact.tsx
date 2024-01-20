@@ -24,7 +24,7 @@ export const Contact: FC<Props> = ({ className = `` }) => {
         bg-gray-300
         scroll-mt-[3.8rem]
 
-        phone:min-h-[80vh]
+        phone:min-h-[70vh]
 
         ${className}
       `}

@@ -21,7 +21,7 @@ function App() {
     ScrollTrigger.create({
       start: 'top top',
       end: 'bottom center',
-      animation: gsap.to(document.querySelector('.navbar'), {
+      animation: gsap.to(document.querySelector('.navbar.pc'), {
         paddingTop: `0.75rem`,
         paddingBottom: `0.75rem`,
         backgroundColor: `#111827`,
@@ -31,25 +31,25 @@ function App() {
       toggleActions: 'restart none none reverse',
     });
 
-    // ScrollTrigger.create({
-    //   start: 'top top',
-    //   end: 'bottom center',
-    //   animation: gsap.to(document.querySelector('.navbar__content-logo-main'), {
-    //     fill: `#e2e8f0`, // #FFCF34
-    //     immediateRender: false,
-    //   }),
-    //   toggleActions: 'restart none none reverse',
-    // });
+    ScrollTrigger.create({
+      start: 'top top',
+      end: 'bottom center',
+      animation: gsap.to(document.querySelector('.navbar.pc .navbar__content-logo'), {
+        fill: `#e2e8f0`, // #FFCF34
+        immediateRender: false,
+      }),
+      toggleActions: 'restart none none reverse',
+    });
 
-    // ScrollTrigger.create({
-    //   start: 'bottom bottom',
-    //   end: 'top center',
-    //   animation: gsap.to(document.querySelector('.side__nav'), {
-    //     bottom: `56px`,
-    //     immediateRender: false,
-    //   }),
-    //   toggleActions: 'restart none none reverse',
-    // });
+    ScrollTrigger.create({
+      start: 'bottom bottom',
+      end: 'top center',
+      animation: gsap.to(document.querySelector('.side__nav'), {
+        bottom: `56px`,
+        immediateRender: true,
+      }),
+      toggleActions: 'restart none none reverse',
+    });
   }, []);
 
   return (

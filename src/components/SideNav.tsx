@@ -16,12 +16,12 @@ export const SideNav: FC<Props> = ({ className = `` }) => {
 
         fixed
         bottom-0
-        left-5
+        right-5
         w-10
         z-10
 
-        tablet:left-2
-        phone:left-1
+        tablet:right-2
+        phone:right-0
 
         ${className}
       `}
