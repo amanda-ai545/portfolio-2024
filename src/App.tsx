@@ -1,3 +1,4 @@
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useEffect } from 'react';
@@ -53,10 +54,13 @@ function App() {
   }, []);
 
   return (
-    <Wrapper className="relative select-none">
-      {/* <Loader /> */}
-      <RouterProvider router={router} />
-    </Wrapper>
+    <>
+      <Wrapper className="relative select-none">
+        {/* <Loader /> */}
+        <RouterProvider router={router} />
+      </Wrapper>
+      <SpeedInsights />
+    </>
   );
 }
 
