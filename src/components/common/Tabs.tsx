@@ -26,6 +26,7 @@ export const Tabs: FC<Props> = ({ tabs, className = `` }) => {
           tabs__content-labels
           flex
           gap-10
+          mb-4
 
           phone:gap-5
           phone:justify-center
@@ -60,10 +61,7 @@ export const Tabs: FC<Props> = ({ tabs, className = `` }) => {
       <div
         className={`
           tabs__content
-          p-4
           font-light
-
-          phone:p-2
         `}
       >
         {tabs[activeTab].content}
