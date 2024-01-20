@@ -1,5 +1,6 @@
 import { Footer } from '@components/Footer';
 import { NavBar } from '@components/NavBar';
+import { SideNav } from '@components/SideNav';
 import { AboutMe } from '@pages/AboutMe';
 import { Contact } from '@pages/Contact';
 import { Home } from '@pages/Home';
@@ -14,6 +15,7 @@ export const Root = () => {
       <Projects />
       <Contact />
       <Footer />
+      <SideNav />
     </>
   );
 };
