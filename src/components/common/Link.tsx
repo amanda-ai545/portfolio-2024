@@ -5,14 +5,14 @@ type Props = {
   className?: string;
   children?: ReactNode;
   href?: string;
-  onClick?: () => void;
 };
 
-export const Link: FC<Props> = ({ variant = `outlined`, className = ``, children, href, onClick }) => {
+export const Link: FC<Props> = ({ variant = `outlined`, className = ``, children, href }) => {
   const variants = {
     filled: `border rounded-full border-black text-black bg-black text-white`,
-    outlined: `border rounded-full border-black text-black`,
+    outlined: `border border-black border-solid rounded-full text-black`,
   };
+
   return (
     <a
       className={`
@@ -34,7 +34,6 @@ export const Link: FC<Props> = ({ variant = `outlined`, className = ``, children
         ${variants[variant]}
       `}
       href={href}
-      onClick={onClick}
     >
       {children}
     </a>

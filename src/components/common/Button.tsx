@@ -11,7 +11,7 @@ type Props = {
 export const Button: FC<Props> = ({ variant = `outlined`, disabled = false, className = ``, children, onClick }) => {
   const variants = {
     filled: `border rounded-full border-black text-black bg-black text-white`,
-    outlined: `border rounded-full border-black text-black`,
+    outlined: `border border-black border-solid rounded-full text-black`,
   };
   return (
     <button
