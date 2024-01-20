@@ -2,29 +2,27 @@ import { FC } from 'react';
 
 import { Chip } from '@components/common/Chip';
 
-import cover from '@assets/images/hot-pepper-beauty-academy/cover.jpg';
-import image1 from '@assets/images/hot-pepper-beauty-academy/image1.jpg';
-import image2 from '@assets/images/hot-pepper-beauty-academy/image2.jpg';
-import image3 from '@assets/images/hot-pepper-beauty-academy/image3.jpg';
-import image4 from '@assets/images/hot-pepper-beauty-academy/image4.jpg';
+import cover from '@assets/images/wacoal/cover.jpg';
+import image1 from '@assets/images/wacoal/image1.jpg';
+import image2 from '@assets/images/wacoal/image2.jpg';
+import image3 from '@assets/images/wacoal/image3.jpg';
+import image4 from '@assets/images/wacoal/image4.jpg';
 
-export const ProjectHotPepperBeauty: FC = () => {
+export const ProjectWacoal: FC = () => {
   return (
     <div
       className={`
-        project__hot-pepper-beauty
+        project__wacoal-wing
       `}
     >
-      <h3 className="project__hot-pepper-beauty-title mb-5 text-8xl font-semibold font-jost uppercase tablet:text-6xl phone:text-4xl">
-        Hot Pepper Beauty Academy
+      <h3 className="project__wacoal-wing-title mb-5 text-8xl font-semibold font-jost uppercase tablet:text-6xl phone:text-4xl">
+        Wacoal Wing
       </h3>
 
-      <div className="project__hot-pepper-beauty-inner">
-        <div className="project__hot-pepper-beauty-skills flex flex-wrap gap-2 mb-5 font-light text-xs">
+      <div className="project__wacoal-wing-inner">
+        <div className="project__wacoal-wing-skills flex flex-wrap gap-2 mb-5 font-light text-xs">
           <Chip>HTML/HTML5</Chip>
           <Chip>CSS/CSS3</Chip>
-          <Chip>Chart JS</Chip>
-          <Chip>JavaScript</Chip>
           <Chip>jQuery</Chip>
           <Chip>Git</Chip>
           <Chip>Responsive Web Design</Chip>
@@ -32,7 +30,7 @@ export const ProjectHotPepperBeauty: FC = () => {
 
         <div
           className="
-            project__hot-pepper-beauty-cover
+            project__wacoal-wing-cover
 
             flex
             justify-center
@@ -62,10 +60,10 @@ export const ProjectHotPepperBeauty: FC = () => {
           />
         </div>
 
-        <h4 className="project__hot-pepper-beauty-subheadline flex items-center mb-5 text-6xl font-semibold font-jost uppercase tablet:text-4xl phone:text-2xl">
+        <h4 className="project__wacoal-wing-subheadline flex items-center mb-5 text-6xl font-semibold font-jost uppercase tablet:text-4xl phone:text-2xl">
           Platform&nbsp;
           <a
-            href="https://hba.beauty.hotpepper.jp/search_sp/"
+            href="https://www.w-wing.jp/personal/"
             target="_blank"
             className="
               bg-cyan-700
@@ -88,13 +86,12 @@ export const ProjectHotPepperBeauty: FC = () => {
           </a>
         </h4>
 
-        <div className="project__hot-pepper-beauty-content">
+        <div className="project__wacoal-wing-content">
           <p className="mb-10 font-light font-jost phone:text-sm">
-            As a developer responsible for one of Hot Pepper Beauty's websites, I successfully crafted websites that
-            effectively showcased the company's market size. This involved working with data and seamlessly integrating
-            Chart JS into the platform. Throughout the process, I collaborated with the project team leader to address
-            specific requirements, incorporating innovative solutions where needed. The result is a website that not
-            only meets the highest standards of design but also delivers a seamless and engaging experience for users.
+            As a developer responsible for one of Wacoal's websites, I ensured its pixel-perfect precision. The project
+            involved meticulous attention to detail, ensuring every element aligned flawlessly to create a visually
+            polished and professional appearance. I implemented best practices in web development to enhance user
+            experience and optimize the site's performance.
           </p>
 
           <div className="grid grid-cols-2 gap-10 phone:grid-cols-1">

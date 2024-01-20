@@ -4,6 +4,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { ProjectGueridon } from '@components/ProjectGueridon';
 import { ProjectHotPepperBeauty } from '@components/ProjectHotPepperBeauty';
 import { ProjectPreview } from '@components/ProjectPreview';
+import { ProjectWacoal } from '@components/ProjectWacoal';
 import { InnerWrapper } from '@components/common/InnerWrapper';
 import { Modal } from '@components/common/Modal';
 import { Title } from '@components/common/Title';
@@ -11,6 +12,8 @@ import { Wrapper } from '@components/common/Wrapper';
 
 import thumbnail1 from '@assets/images/project-1-thumbnail.jpg';
 import thumbnail2 from '@assets/images/project-2-thumbnail.jpg';
+import thumbnail3 from '@assets/images/project-3-thumbnail.jpg';
+import thumbnail4 from '@assets/images/project-4-thumbnail.jpg';
 
 type Props = {
   className?: string;
@@ -59,6 +62,20 @@ export const Projects: FC<Props> = ({ className = `` }) => {
 
       <InnerWrapper className="grid grid-cols-3 gap-8 w-full py-5 tablet:grid-cols-2 phone:grid-cols-1">
         <ProjectPreview
+          title="Ads Templates"
+          subtitle="Website"
+          imgSrc={thumbnail4}
+          className="cursor-default hover:scale-100"
+        />
+
+        <ProjectPreview
+          title="Wacoal Wing"
+          subtitle="Website"
+          imgSrc={thumbnail3}
+          onClick={() => handleClick('wacoal-wing')}
+        />
+
+        <ProjectPreview
           title="Hot Pepper Beauty Academy"
           subtitle="Website"
           imgSrc={thumbnail2}
@@ -75,6 +92,7 @@ export const Projects: FC<Props> = ({ className = `` }) => {
 
       <Modal isOpen={isModalOpen} onClose={closeModal} className="max-w-screen-xl">
         {selectedProjectName === 'hot-pepper-beauty-academy' && <ProjectHotPepperBeauty />}
+        {selectedProjectName === 'wacoal-wing' && <ProjectWacoal />}
         {selectedProjectName === 'project-gueridon' && <ProjectGueridon />}
       </Modal>
     </Wrapper>
