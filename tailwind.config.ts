@@ -17,6 +17,12 @@ export default {
       jost: ['Jost', 'san-serif'],
       italiana: ['Italiana', 'san-serif'],
     },
+    screens: {
+      phone: { min: '280px', max: '480px' },
+      tablet: { min: '481px', max: '768px' },
+      laptop: { min: '769px', max: '1024px' },
+      desktop: { min: '1025px', max: '1200px' },
+    },
   },
   plugins: [],
 };
