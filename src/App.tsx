@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import '@assets/styles/main.css';
 import { Wrapper } from '@components/common/Wrapper';
 import { Root } from '@routes/root';
+import { Loader } from '@components/common/Loader';
 
 function App() {
   gsap.registerPlugin(ScrollTrigger);
@@ -54,7 +55,7 @@ function App() {
 
   return (
     <Wrapper className="relative select-none">
-      {/* <Loader /> */}
+      <Loader />
       <RouterProvider router={router} />
     </Wrapper>
   );
