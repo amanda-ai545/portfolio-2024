@@ -60,7 +60,7 @@ export const ProjectPreview: FC<Props> = ({ title, subtitle, imgSrc, className =
       >
         <div className="w-full h-full text-white ">
           <p className="text-xs font-extralight uppercase">{subtitle}</p>
-          <p className="font-light">{title}</p>
+          <h3 className="font-light">{title}</h3>
         </div>
       </div>
     </div>
