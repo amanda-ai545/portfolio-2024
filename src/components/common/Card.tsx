@@ -42,7 +42,7 @@ export const Card: FC<Props> = ({ className = ``, logo, title, subTitle, descrip
       )}
 
       <div>
-        <p
+        <h3
           className={`
             card__content-title
             mb-1
@@ -53,7 +53,7 @@ export const Card: FC<Props> = ({ className = ``, logo, title, subTitle, descrip
           `}
         >
           {title} {subTitle && <span className="text-xs text-slate-500">{subTitle}</span>}
-        </p>
+        </h3>
 
         <p
           className={`

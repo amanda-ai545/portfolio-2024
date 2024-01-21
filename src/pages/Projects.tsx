@@ -67,7 +67,7 @@ export const Projects: FC<Props> = ({ className = `` }) => {
           title="Ads Templates"
           subtitle="Website"
           imgSrc={thumbnail4}
-          className="cursor-default hover:scale-100"
+          className="!cursor-default hover:!scale-100"
         />
 
         <ProjectPreview
