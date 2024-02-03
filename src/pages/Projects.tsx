@@ -1,6 +1,7 @@
 import { FC, useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 
+import { ProjectAdsTemplates } from '@components/ProjectAdsTemplates';
 import { ProjectGueridon } from '@components/ProjectGueridon';
 import { ProjectHotPepperBeauty } from '@components/ProjectHotPepperBeauty';
 import { ProjectPreview } from '@components/ProjectPreview';
@@ -62,12 +63,12 @@ export const Projects: FC<Props> = ({ className = `` }) => {
         Projects
       </Title>
 
-      <InnerWrapper className="grid grid-cols-3 gap-8 w-full py-5 tablet:grid-cols-2 phone:grid-cols-1">
+      <InnerWrapper className="grid grid-cols-2 gap-10 w-full py-5 tablet:grid-cols-2 phone:grid-cols-1">
         <ProjectPreview
           title="Ads Templates"
-          subtitle="Website"
+          subtitle="Brand content"
           imgSrc={thumbnail4}
-          className="!cursor-default hover:!scale-100"
+          onClick={() => handleClick('ads-templates')}
         />
 
         <ProjectPreview
@@ -93,8 +94,9 @@ export const Projects: FC<Props> = ({ className = `` }) => {
       </InnerWrapper>
 
       <Modal isOpen={isModalOpen} onClose={closeModal} className="max-w-screen-xl">
-        {selectedProjectName === 'hot-pepper-beauty-academy' && <ProjectHotPepperBeauty />}
+        {selectedProjectName === 'ads-templates' && <ProjectAdsTemplates />}
         {selectedProjectName === 'wacoal-wing' && <ProjectWacoal />}
+        {selectedProjectName === 'hot-pepper-beauty-academy' && <ProjectHotPepperBeauty />}
         {selectedProjectName === 'project-gueridon' && <ProjectGueridon />}
       </Modal>
     </Wrapper>
