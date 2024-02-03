@@ -15,7 +15,7 @@ export const ProjectPreview: FC<Props> = ({ title, subtitle, imgSrc, className =
         project__preview
 
         relative
-        h-72
+        h-[26rem]
         rounded-2xl
         bg-gray-300
         transition
@@ -24,6 +24,9 @@ export const ProjectPreview: FC<Props> = ({ title, subtitle, imgSrc, className =
         overflow-hidden
 
         hover:scale-[1.02]
+
+        tablet:h-72
+        phone:h-72
 
         ${className}
       `}
