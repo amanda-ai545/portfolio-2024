@@ -16,7 +16,7 @@ export const ProjectGueridon: FC = () => {
         project__gueridon
       `}
     >
-      <h3 className="project__gueridon-title mb-5 text-8xl font-semibold font-jost uppercase tablet:text-6xl phone:text-4xl">
+      <h3 className="project__gueridon-title mb-5 text-8xl font-semibold font-jost uppercase tablet:text-6xl phone:pr-5 phone:text-3xl">
         Project Guèridon
       </h3>
 
