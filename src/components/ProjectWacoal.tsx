@@ -15,7 +15,7 @@ export const ProjectWacoal: FC = () => {
         project__wacoal-wing
       `}
     >
-      <h3 className="project__wacoal-wing-title mb-5 text-8xl font-semibold font-jost uppercase tablet:text-6xl phone:text-4xl">
+      <h3 className="project__wacoal-wing-title mb-5 text-8xl font-semibold font-jost uppercase tablet:text-6xl phone:pr-5 phone:text-3xl">
         Wacoal Wing
       </h3>
 

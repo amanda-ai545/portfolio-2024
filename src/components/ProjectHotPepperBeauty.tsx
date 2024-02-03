@@ -15,7 +15,7 @@ export const ProjectHotPepperBeauty: FC = () => {
         project__hot-pepper-beauty
       `}
     >
-      <h3 className="project__hot-pepper-beauty-title mb-5 text-8xl font-semibold font-jost uppercase tablet:text-6xl phone:text-4xl">
+      <h3 className="project__hot-pepper-beauty-title mb-5 text-8xl font-semibold font-jost uppercase tablet:text-6xl phone:pr-5 phone:text-3xl">
         Hot Pepper Beauty Academy
       </h3>
 
