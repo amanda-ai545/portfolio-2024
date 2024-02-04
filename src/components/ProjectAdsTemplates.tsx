@@ -89,8 +89,8 @@ export const ProjectAdsTemplates: FC = () => {
         </h4>
 
         <div className="project__ads-templates-content">
-          <div className="grid grid-cols-1 gap-10 phone:grid-cols-1">
-            <div className="grid grid-cols-2 gap-10">
+          <div className="grid grid-cols-1 gap-10">
+            <div className="grid grid-cols-2 gap-10 phone:grid-cols-1 phone:gap-5">
               <div
                 className="
                   flex
@@ -109,7 +109,7 @@ export const ProjectAdsTemplates: FC = () => {
                 <VideoPlayer footage={footage1} />
               </div>
               <div>
-                <p className="mb-5 font-light font-jost phone:text-sm">
+                <p className="mb-5 font-light font-jost tablet:text-xs tablet:mb-2.5 phone:text-xs phone:mb-2.5">
                   The Catch HD and Social Video template includes elements such as a Background Image, Search Bar,
                   Product details, and Product images, among others. Users can easily customize these components to
                   align with their specific needs. This template also incorporates seamless transitions of the products,
@@ -118,7 +118,7 @@ export const ProjectAdsTemplates: FC = () => {
                   experience.
                 </p>
 
-                <div className="flex flex-wrap gap-2 mb-5 font-light text-xs">
+                <div className="flex flex-wrap gap-2 mb-5 font-light text-xs phone:text-xs">
                   <Chip>React JS</Chip>
                   <Chip>TypeScript</Chip>
                   <Chip>Tailwind CSS</Chip>
@@ -127,7 +127,7 @@ export const ProjectAdsTemplates: FC = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-10">
+            <div className="grid grid-cols-2 gap-10 phone:grid-cols-1 phone:gap-5">
               <div
                 className="
                   flex
@@ -147,13 +147,13 @@ export const ProjectAdsTemplates: FC = () => {
               </div>
 
               <div>
-                <p className="mb-5 font-light font-jost phone:text-sm">
+                <p className="mb-5 font-light font-jost tablet:text-xs tablet:mb-2.5 phone:text-xs phone:mb-2.5">
                   The VDP Video template for Toyota incorporates various elements such as Background Images, Vehicles,
                   Footage, and more. Similar to other templates, users have the flexibility to modify these elements
                   from the Sesimi App according to their preferences or specific requirements.
                 </p>
 
-                <div className="flex flex-wrap gap-2 mb-5 font-light text-xs">
+                <div className="flex flex-wrap gap-2 mb-5 font-light text-xs phone:text-xs">
                   <Chip>React JS</Chip>
                   <Chip>TypeScript</Chip>
                   <Chip>Tailwind CSS</Chip>
@@ -162,7 +162,7 @@ export const ProjectAdsTemplates: FC = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-2 gap-10">
+            <div className="grid grid-cols-2 gap-10 phone:grid-cols-1 phone:gap-5">
               <div
                 className="
                   flex
@@ -182,13 +182,13 @@ export const ProjectAdsTemplates: FC = () => {
               </div>
 
               <div>
-                <p className="mb-5 font-light font-jost phone:text-sm">
+                <p className="mb-5 font-light font-jost tablet:text-xs tablet:mb-2.5 phone:text-xs phone:mb-2.5">
                   The Animated template for Cherymotor includes diverse elements like Vehicles, Mountain Background
                   Image, Sky Background Image, and more. In this template, clients only need flexibility in customizing
                   dealership details.
                 </p>
 
-                <div className="flex flex-wrap gap-2 mb-5 font-light text-xs">
+                <div className="flex flex-wrap gap-2 mb-5 font-light text-xs phone:text-xs">
                   <Chip>React JS</Chip>
                   <Chip>TypeScript</Chip>
                   <Chip>Tailwind CSS</Chip>
