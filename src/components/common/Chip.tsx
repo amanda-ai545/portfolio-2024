@@ -19,6 +19,7 @@ export const Chip: FC<Props> = ({ className = ``, children }) => {
         border-gray-900
         rounded-full
         text-black
+        font-jost
 
         ${className}
       `}
