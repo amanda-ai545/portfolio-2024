@@ -9,6 +9,10 @@ export const skills = [
   'React JS',
   'Vue 3',
   'VueX',
+  'Node JS',
+  'Jest',
+  'Vitest',
+  'Cypress',
   'Tailwind CSS',
   'Bootstrap',
   'Material UI',
@@ -44,8 +48,26 @@ export const details = [
       >
         <Card
           logo={<LogoSesimi className="w-auto h-12 mt-4" color="#1e293b" />}
+          title="Software Developer"
+          subTitle="(March 2024 - Present)"
+          description="I am responsible for implementing new features and addressing bugs within the application. I focus on writing efficient, high-quality code, and I conduct comprehensive unit and end-to-end (E2E) testing to ensure software reliability. I actively contribute to team discussions to refine our development processes and participate in workshops aimed at enhancing the team's skills. I collaborate closely with Software Engineers at all levels, Design Engineers, and the Customer Success team. My work spans both Frontend development using React JS and Backend development with Node JS."
+          chips={[
+            'React JS',
+            'Typescript',
+            'Tailwind CSS',
+            'Node JS',
+            'Cypress',
+            'Jest',
+            'Vitest',
+            'Git',
+            'Responsive Web Design',
+          ]}
+        />
+
+        <Card
+          logo={<LogoSesimi className="w-auto h-12 mt-4" color="#1e293b" />}
           title="Web / Frontend Designer"
-          subTitle="(September 2022 - Present)"
+          subTitle="(September 2022 - March 2024)"
           description="My role primarily focused on constructing adaptable, reusable components and versatile Advertisement Templates. These templates were designed for various mediums such as Magazines, Banners, Social Media, TV Commercials, and Animated ads. Our clients utilized these Advertisement Templates on the Sesimi platform, allowing them to customize specific elements like Headlines, Video Footage, Backgrounds, and more to suit their needs."
           chips={['React JS', 'Typescript', 'Tailwind CSS', 'GSAP', 'Remotion JS', 'Git', 'Responsive Web Design']}
         />
