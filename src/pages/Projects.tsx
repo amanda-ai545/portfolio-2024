@@ -2,6 +2,7 @@ import { FC, useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 
 import { ProjectAdsTemplates } from '@components/ProjectAdsTemplates';
+import { ProjectComingSoon } from '@components/ProjectComingSoon';
 import { ProjectGueridon } from '@components/ProjectGueridon';
 import { ProjectHotPepperBeauty } from '@components/ProjectHotPepperBeauty';
 import { ProjectPreview } from '@components/ProjectPreview';
@@ -89,6 +90,11 @@ export const Projects: FC<Props> = ({ className = `` }) => {
 
       <Modal isOpen={isModalOpen} onClose={closeModal} className="max-w-screen-xl">
         {selectedProjectName === 'ads-templates' && <ProjectAdsTemplates />}
+        {selectedProjectName === 'dog-hotel-&-spa' && <ProjectComingSoon />}
+        {selectedProjectName === 'okimeguri' && <ProjectComingSoon />}
+        {selectedProjectName === 'iriomote-admin' && <ProjectComingSoon />}
+        {selectedProjectName === 'smart-front-mujinn' && <ProjectComingSoon />}
+        {selectedProjectName === 'family-docs-box' && <ProjectComingSoon />}
         {selectedProjectName === 'wacoal-wing' && <ProjectWacoal />}
         {selectedProjectName === 'hot-pepper-beauty-academy' && <ProjectHotPepperBeauty />}
         {selectedProjectName === 'project-gueridon' && <ProjectGueridon />}
