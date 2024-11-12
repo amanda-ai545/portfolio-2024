@@ -60,7 +60,7 @@ export const Home: FC<Props> = ({ className = `` }) => {
                 Evallo
               </span>
               <span className="block text-[0.84vw] font-semibold uppercase phone:text-[2.5vw]">
-                Frontend Web Developer / Vue Developer / React JS Developer
+                Frontend Web Developer / Vue JS Developer / React JS Developer
               </span>
             </h1>
 

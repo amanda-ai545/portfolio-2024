@@ -6,15 +6,12 @@ import { ProjectGueridon } from '@components/ProjectGueridon';
 import { ProjectHotPepperBeauty } from '@components/ProjectHotPepperBeauty';
 import { ProjectPreview } from '@components/ProjectPreview';
 import { ProjectWacoal } from '@components/ProjectWacoal';
+import { Button } from '@components/common/Button';
 import { InnerWrapper } from '@components/common/InnerWrapper';
 import { Modal } from '@components/common/Modal';
 import { Title } from '@components/common/Title';
 import { Wrapper } from '@components/common/Wrapper';
-
-import thumbnail1 from '@assets/images/project-1-thumbnail.jpg';
-import thumbnail2 from '@assets/images/project-2-thumbnail.jpg';
-import thumbnail3 from '@assets/images/project-3-thumbnail.jpg';
-import thumbnail4 from '@assets/images/project-4-thumbnail.jpg';
+import { projects } from '@data/projects';
 
 type Props = {
   className?: string;
@@ -25,6 +22,7 @@ export const Projects: FC<Props> = ({ className = `` }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState('');
   const [selectedProjectName, setSelectedProjectName] = useState('');
+  const [visibleItems, setVisibleItems] = useState(4);
   const navigate = useNavigate();
 
   const closeModal = () => {
@@ -38,15 +36,18 @@ export const Projects: FC<Props> = ({ className = `` }) => {
     setSelectedProject(projectName);
   };
 
+  const handleViewMore = () => {
+    setVisibleItems((prev) => prev + 4);
+  };
+
   useEffect(() => {
     setSelectedProjectName(location.search.split('=')[1]);
-  }, [selectedProject]);
+  }, [location.search, selectedProject]);
 
   return (
     <Wrapper
       className={`
         projects
-
         relative
         min-h-screen
         -mt-[1rem]
@@ -55,7 +56,6 @@ export const Projects: FC<Props> = ({ className = `` }) => {
 
         tablet:-mt-[1px]
         phone:-mt-[1px]
-
         ${className}
       `}
     >
@@ -64,34 +64,28 @@ export const Projects: FC<Props> = ({ className = `` }) => {
       </Title>
 
       <InnerWrapper className="grid grid-cols-2 gap-10 w-full py-5 tablet:grid-cols-2 phone:grid-cols-1">
-        <ProjectPreview
-          title="Ads Templates"
-          subtitle="Brand content"
-          imgSrc={thumbnail4}
-          onClick={() => handleClick('ads-templates')}
-        />
-
-        <ProjectPreview
-          title="Wacoal Wing"
-          subtitle="Website"
-          imgSrc={thumbnail3}
-          onClick={() => handleClick('wacoal-wing')}
-        />
-
-        <ProjectPreview
-          title="Hot Pepper Beauty Academy"
-          subtitle="Website"
-          imgSrc={thumbnail2}
-          onClick={() => handleClick('hot-pepper-beauty-academy')}
-        />
-
-        <ProjectPreview
-          title="Project Guèridon"
-          subtitle="Website | Application | Smart table"
-          imgSrc={thumbnail1}
-          onClick={() => handleClick('project-gueridon')}
-        />
+        {projects.slice(0, visibleItems).map((project, index) => (
+          <ProjectPreview
+            key={index}
+            title={project.title}
+            subtitle={project.subtitle}
+            imgSrc={project.imgSrc}
+            onClick={() => handleClick(project.title.toLowerCase().replace(/\s+/g, '-'))}
+          />
+        ))}
       </InnerWrapper>
+
+      {visibleItems < projects.length && (
+        <InnerWrapper className="grid justify-center py-16">
+          <Button
+            variant="filled"
+            className="mr-4 text-sm !px-10 tablet:text-xs tablet:!px-2.5 tablet:py-1 tablet:mr-2 tablet:gap-1 phone:text-[3vw] phone:!px-2 phone:py-1 phone:mr-2 phone:gap-1"
+            onClick={handleViewMore}
+          >
+            View more
+          </Button>
+        </InnerWrapper>
+      )}
 
       <Modal isOpen={isModalOpen} onClose={closeModal} className="max-w-screen-xl">
         {selectedProjectName === 'ads-templates' && <ProjectAdsTemplates />}

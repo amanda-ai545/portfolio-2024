@@ -33,7 +33,7 @@ export const Contact: FC<Props> = ({ className = `` }) => {
 
       <InnerWrapper className="flex flex-wrap justify-center text-center py-5" id="contact">
         <p className="mb-10 phone:text-sm">
-          Please don't hesitate to reach out to me via my mobile phone or email address. <br />
+          Please don't hesitate to reach out to me via mobile phone or email address. <br />
           You can initiate contact by clicking the button below. I'm eagerly looking forward to speaking with you.
         </p>
 
